@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIAP YouTube Studio</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header">
+      <img src="fiap.png" alt="" class="logo" /> <span>Youtube Studio</span>
+    </h1>
+
+    <div class="container">
+      <label for="select">Escolha seu plano:</label>
+      <select name="" id="select"></select>
+    </div>
+    <div class="container">
+      <label for="inputNum">Qual seu faturamento anual?</label>
+      <input
+        type="number"
+        min="0.00"
+        max="10000.00"
+        step="0.01"
+        id="inputNum"
+        placeholder="0.00"
+      />
+    </div>
+    <button class="summit">Selecionar</button>
+
+    <table class="table">
+      <tr class="tableRow">
+        <th class="tableData">Nivel</th>
+        <th class="tableData">Porcentagem sobre o faturamento</th>
+      </tr>
+      <tr class="tableRow selected" id="basic">
+        <td class="tableData">Basic</td>
+        <td class="tableData">30%</td>
+      </tr>
+      <tr class="tableRow" id="silver">
+        <td class="tableData">Silver</td>
+        <td class="tableData">20%</td>
+      </tr>
+      <tr class="tableRow" id="gold">
+        <td class="tableData">Gold</td>
+        <td class="tableData">10%</td>
+      </tr>
+      <tr class="tableRow" id="platinum">
+        <td class="tableData">Platinum</td>
+        <td class="tableData">5%</td>
+      </tr>
+    </table>
+    <section class="section">
+      <ul class="section_list"></ul>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

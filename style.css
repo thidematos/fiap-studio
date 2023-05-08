@@ -1,0 +1,147 @@
+@import url(Reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --corRosa: #ed145b;
+  --corAzul: #27ceb4;
+  --corPreta: #171717;
+  --white: white;
+  --font: 'Montserrat';
+  --fontDisplay: 'Bruno Ace SC';
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--corPreta);
+  font: 400 1rem var(--font);
+  color: var(--white);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 60vw;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header {
+  font: 400 2rem var(--fontDisplay);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  display: inline;
+  width: 15%;
+}
+
+.table {
+  border: 1px solid var(--white);
+  text-align: center;
+}
+
+.tableData {
+  padding: 0.5rem;
+}
+
+.tableRow {
+  border-bottom: 1px solid var(--white);
+}
+
+.selected {
+  background-color: var(--corRosa);
+}
+
+#select {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#inputNum {
+  background-image: url(real.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+  border: 2px solid var(--corAzul);
+  padding: 0.2rem;
+  font: 700 1rem var(--font);
+}
+
+#inputNum::placeholder {
+  text-align: right;
+}
+
+.section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list_li {
+  font: 400 1.5rem var(--font);
+  text-align: center;
+}
+
+#select {
+  background: transparent;
+  border: 2px solid var(--corAzul);
+  padding: 0.2rem;
+  color: var(--white);
+  font: 400 1rem var(--font);
+}
+
+option {
+  color: var(--corPreta);
+}
+
+.summit {
+  background: var(--white);
+  border: 2px solid var(--corRosa);
+  padding: 0.5rem;
+  color: var(--corPreta);
+  font: 400 1.2rem var(--fontDisplay);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.276);
+  transition-duration: 0.5s;
+}
+
+.summit:hover {
+  background-color: var(--corRosa);
+  border: 2px solid var(--corAzul);
+  color: var(--white);
+  transform: scale(105%);
+}
+
+.color {
+  color: var(--corAzul);
+}
